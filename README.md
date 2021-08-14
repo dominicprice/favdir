@@ -1,4 +1,4 @@
-# favdir.sh
+# favdir
 
 Shortcut manager for bash.
 
@@ -28,12 +28,14 @@ if you have two entries `mynickname` and `yournickname`, `favdir -g mynick` will
 you to `mynickname`, but `favdir -g nick` is ambiguous and will just list the possible
 options.
 
+For more information, view the help page by running `favdir --help`
+
 ## Customizatioin
 
 The location of the database is determined by the `$FAVDIR_DB` environment variable, and
 defaults to `~/.favdirs`. To change this, simply define `FAVDIR_DB` to something else
 before sourcing `favdir.sh`, e.g.
 ```
-FAVDIR_DB=~/.config/favdirs`
+FAVDIR_DB="~/.config/favdirs"
 source /path/to/favdir.sh
 ```
